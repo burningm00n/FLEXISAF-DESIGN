@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class=" header wrapper">
+        <div class="navigation">
+            <img src="/assets/svg/logo.svg" alt="Logo" title="Home" width="60" height="48">
+            <nav class="primary-navigation">
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li class="selected"><a href="#">Transactions</a>
+                        <span class="bar"></span>
+                    </li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="profile">
+            <div class="import-csv header-icons circle-centered">
+                <img src="/assets/svg/import-csv.svg" alt="import csv" title="import" width="13" height="16">
+            </div>
+            <div class="notifications header-icons circle-centered">
+                <img src="/assets/svg/bell.svg" alt="notifications" title="notifications" width="14" height="16">
+            </div>
+            <div class="profile-img">
+                <img src="/assets/img/image.webp" alt="profile image" title="profile image" width="48" height="48">
+                <div class="status-circle"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <h1>Transactions History</h1>
+        <div class="filters">
+            <div class="actions">
+                <p>Sep 9, 2024 - Sep 15, 2024</p>
+                <img src="/assets/svg/calendar-alt.svg" alt="select date" title="select date" width="14" height="16">
+            </div>
+            <div class="filter-actions">
+                <div class="actions">
+                    <p>Export CSV</p>
+                    <img src="/assets/svg/export-csv.svg" alt="export csv" title="export csv" width="13" height="16">
+                </div>
+                <div class="actions">
+                    <p>Download Invoices</p>
+                    <img src="/assets/svg/download-invoices.svg" alt="download invoices" title="download invoices"
+                        width="16" height="14">
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-layout">
+            <div class="card">
+                <div class="card-icon"><img src="/assets/svg/dollar-sign.svg" alt="" width="10" height="16"></div>
+                <div class="card-details">
+                    <p class="title">Balances</p>
+                    <p class="amount">$78,987.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="/assets/svg/wallet.svg" alt="" width="16" height="14"></div>
+                <div class="card-details">
+                    <p class="title">Savings</p>
+                    <p class="amount">$23,000.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="/assets/svg/arrow-down.svg" alt="" width="14" height="16"></div>
+                <div class="card-details">
+                    <p class="title">Incomes</p>
+                    <p class="amount">$28,670.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><img src="/assets/svg/arrow-up.svg" alt="" width="14" height="16"></div>
+                <div class="card-details">
+                    <p class="title">Expenses</p>
+                    <p class="amount">$3,456.00</p>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <section>
+            <div class="history-table">
+                <div class="menu">
+                    <nav class="secondary-navigation">
+                        <ul>
+                            <li class="selected"><a href="#">All</a>
+                                <span class="bar"></span>
+                            </li>
+                            <li><a href="#">Savings</a></li>
+                            <li><a href="#">Income</a></li>
+                            <li><a href="#">Expenses</a></li>
+                        </ul>
+                    </nav>
+                    <div class="status">
+                        <p>Status:</p>
+                        <div class="success">
+                            <p>All</p>
+                            <img src="/assets/svg/caret-down.svg" alt="" width="12" height="6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <tr class="table-headings">
+                    <th>Ref ID</th>
+                    <th>Transaction Date</th>
+                    <th>From</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th class="table-heading-actions">Actions</th>
+                </tr>
+                <tr class="first-row ">
+                    <td data-cell="ref id">456789356</td>
+                    <td data-cell="transaction amount">Sep 9, 2024, 04:30pm</td>
+                    <td data-cell="from"><span class="from-cell"><span class="icon">f</span>fadel@email.com</span></td>
+                    <td data-cell="type">Income</td>
+                    <td data-cell="amount">+$5,670.00</td>
+                    <td data-cell="status"><span>Pending</span></td>
+                    <td data-cell="actions"><span class="action-cell"><img src="/assets/svg/dots.svg" alt="" width="4" height="20"></span></td>
+                </tr>
+                <tr class="second-row ">
+                    <td data-cell="ref id">456789356</td>
+                    <td data-cell="transaction amount">Sep 8, 2024, 03:13pm</td>
+                    <td data-cell="from"><span class="from-cell"><span class="icon"><img src="/assets/svg/Vector (3).svg"
+                                    alt=""></span>Wise-5466xxxx</span></td>
+                    <td data-cell="type">Savings</td>
+                    <td data-cell="amount">+$15,000.00</td>
+                    <td data-cell="status"><span>Completed</span></td>
+                    <td data-cell="actions"><span class="action-cell"><img src="/assets/svg/dots.svg" alt="" width="4" height="20"></span></td>
+                </tr>
+                <tr class="third-row ">
+                    <td data-cell="ref id">456789356</td>
+                    <td data-cell="transaction amount">Sep 7, 2024, 1:00pm</td>
+                    <td data-cell="from"><span class="from-cell"><span class="icon"><img src="/assets/svg/paypal.svg"
+                                    alt=""></span>Paypal - 3345xxxx</span></td>
+                    <td data-cell="type">Expenses</td>
+                    <td data-cell="amount">-$3,456.00</td>
+                    <td data-cell="status"><span>Cancelled</span></td>
+                    <td data-cell="actions"><span class="action-cell"><img src="/assets/svg/dots.svg" alt="" width="4" height="20"></span></td>
+                </tr>
+                <tr class="fourth-row ">
+                    <td data-cell="ref id">456789356</td>
+                    <td data-cell="transaction amount">Sep 6, 2024, 07:00am</td>
+                    <td data-cell="from"><span class="from-cell"><span class="icon">f</span>kikikarisma@email.com</span>
+                    </td>
+                    <td data-cell="type">Income</td>
+                    <td data-cell="amount">+$30,000.00</td>
+                    <td data-cell="status"><span>Pending</span></td>
+                    <td data-cell="actions"><span class="action-cell"><img src="/assets/svg/dots.svg" alt="" width="4" height="20"></span></td>
+                </tr>
+                <tr class="fifth-row ">
+                    <td data-cell="ref id">456789356</td>
+                    <td data-cell="transaction amount">Sep 8, 2024, 03:13pm</td>
+                    <td data-cell="from"><span class="from-cell"><span class="icon"><img src="/assets/svg/Vector (3).svg"
+                                    alt=""></span>Wise-5466xxxx</span></td>
+                    <td data-cell="type">Savings</td>
+                    <td data-cell="amount">+$8,000.00</td>
+                    <td data-cell="status"><span>Completed</span></td>
+                    <td data-cell="actions"><span class="action-cell"><img src="/assets/svg/dots.svg" alt="" width="4" height="20"></span></td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        </div>
+    </main>
+</body>
+
+</html>
